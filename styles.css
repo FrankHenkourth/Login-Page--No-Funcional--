@@ -71,3 +71,140 @@ a:hover {
   color: #23527c;
 }
 
+
+
+
+/*dark mode*/
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  transition: background-color 0.5s; 
+}
+
+body.dark-mode {
+  background-color: #333; /*wallpaper*/
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s, border-color 0.5s; /* animac*/
+}
+
+.container.dark-mode {
+  background-color: #444; /* fondo*/
+  border-color: #666; /* border */
+}
+
+.login-form {
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.5s; /* anim */
+}
+
+h2.dark-mode {
+  color: #ccc; /* Tex*/
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.5s; /* anim */
+}
+
+label.dark-mode {
+  color:  #ccc; /* tex */
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #4CAF50;
+  transition: border-color 0.5s; 
+}
+
+input[type="text"].dark-mode, input[type="password"].dark-mode {
+  border-color: #3e8e41; 
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s; 
+}
+
+button[type="submit"].dark-mode {
+  background-color: #4CAF50;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+button[type="submit"].dark-mode:hover {
+  background-color: #3e8e41; 
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  transition: color 0.5s; 
+}
+
+p.dark-mode {
+  color: #fff; 
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+  transition: color 0.5s;
+}
+
+a.dark-mode {
+  color: #fff; 
+}
+
+a:hover {
+  color: #23527c;
+}
+
+a.dark-mode:hover {
+  color: #fff; 
+}
+
+/*swich*/
+.toggle-dark-mode {
+  position: relative;
+  top: 10px;
+  right: 10px;
+  background-color: #123d1b;
+  color: #fff;
+  padding: 10px 10px 20px 10px  ;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-dark-mode:hover {
+  background-color: #123d1b;
+}
